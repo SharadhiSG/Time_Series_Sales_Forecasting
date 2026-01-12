@@ -241,18 +241,3 @@ Forecast plots include:
 * Separate modeling for promotional vs non-promotional periods
 
 ---
-
-## 👩‍💻 Author Notes
-
-This project emphasizes **correct methodology, realistic evaluation, and honest interpretation**, aligning with both academic standards and industry practices.
-
----
-
-If you want, I can:
-
-* ✨ Shorten this for GitHub
-* 📄 Convert it into a project report
-* 🧠 Add viva-ready Q&A
-* 🧩 Add architecture diagrams (text-based)
-
-Just tell me 👍
