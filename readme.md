@@ -1,8 +1,3 @@
-Below is a **complete, pin-to-pin `README.md` content** you can **directly copy-paste** into your project.
-It is written **from basics → concepts → implementation → evaluation → conclusions**, in a **professor-friendly + industry-ready** style.
-
----
-
 # 📈 Time Series Sales Forecasting using Prophet
 
 ## 📌 Project Overview
