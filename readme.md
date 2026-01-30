@@ -1,13 +1,13 @@
 # 📈 Time Series Sales Forecasting using Prophet
 
-## 📌 Project Overview
+##  Project Overview
 
 This project focuses on building a **robust time series forecasting model** to predict **monthly product unit sales** using historical sales data.
 The objective is to evaluate forecasting performance using **strict rolling 6-month validation** and **MAPE-based accuracy thresholds**, while accounting for **trend, seasonality, and external business factors** such as discounts and pricing.
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 The goal is to develop a forecasting model that:
 
@@ -25,7 +25,7 @@ The goal is to develop a forecasting model that:
 
 ---
 
-## 📚 What is Time Series Data?
+##  What is Time Series Data?
 
 A **time series** is a sequence of observations collected at **regular time intervals** (daily, monthly, yearly).
 
@@ -41,26 +41,26 @@ In this project:
 
 ---
 
-## 🧩 Components of a Time Series
+##  Components of a Time Series
 
 A time series typically consists of the following components:
 
-### 1️⃣ Trend
+### 1️ Trend
 
 * Long-term increase or decrease in data
 * Example: Gradual decline in sales after 2019
 
-### 2️⃣ Seasonality
+### 2️ Seasonality
 
 * Repeating patterns at fixed intervals
 * Example: Higher sales during festive months
 
-### 3️⃣ Cyclical Effects
+### 3️ Cyclical Effects
 
 * Irregular fluctuations caused by external events
 * Example: Economic slowdowns or pandemics
 
-### 4️⃣ Noise (Residuals)
+### 4️ Noise (Residuals)
 
 * Random variation not explained by trend or seasonality
 
@@ -68,7 +68,7 @@ Understanding these components is essential for choosing the right forecasting m
 
 ---
 
-## 🛠️ Tools & Technologies Used
+##  Tools & Technologies Used
 
 * **Python**
 * **Pandas & NumPy** – data manipulation
@@ -79,7 +79,7 @@ Understanding these components is essential for choosing the right forecasting m
 
 ---
 
-## 📂 Dataset Description
+##  Dataset Description
 
 The dataset contains historical sales records with the following fields:
 
@@ -93,7 +93,7 @@ The dataset contains historical sales records with the following fields:
 
 ---
 
-## 🧹 Data Preprocessing Steps
+##  Data Preprocessing Steps
 
 1. **Load dataset**
 2. **Convert date column to datetime**
@@ -105,7 +105,7 @@ The dataset contains historical sales records with the following fields:
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 
 EDA was performed to understand the data before modeling:
 
@@ -126,7 +126,7 @@ EDA was performed to understand the data before modeling:
 
 ---
 
-## 🤖 Why Prophet?
+##  Why Prophet?
 
 Prophet was chosen because it:
 
@@ -137,7 +137,7 @@ Prophet was chosen because it:
 
 ---
 
-## ⚙️ Prophet Model Configuration
+##  Prophet Model Configuration
 
 Key settings used:
 
@@ -151,7 +151,7 @@ Key settings used:
 
 ---
 
-## 🔄 Rolling 6-Month Validation Strategy
+##  Rolling 6-Month Validation Strategy
 
 Instead of a single train-test split, the project uses:
 
@@ -187,14 +187,14 @@ MAPE = mean(|Actual − Predicted| / Actual) × 100
 
 ---
 
-## 📉 Model Performance Summary
+##  Model Performance Summary
 
 * **MoM MAPE ≤ 15%** achieved in ~15% of windows
 * **Overall 6-Month MAPE ≤ 15%** achieved in ~22% of windows
 
 ---
 
-## 🧠 Interpretation of Results
+## Interpretation of Results
 
 * The model performs **better at medium-term forecasting**
 * Short-term accuracy is affected by:
@@ -206,14 +206,14 @@ MAPE = mean(|Actual − Predicted| / Actual) × 100
 
 ---
 
-## ⚠️ Key Insight
+##  Key Insight
 
 Strict MoM accuracy thresholds are **challenging for retail sales data** due to inherent volatility.
 This reflects a **real-world limitation**, not a modeling error.
 
 ---
 
-## 📌 Final Forecast Visualization
+##  Final Forecast Visualization
 
 The final model was trained on the full dataset and used to forecast future sales.
 Forecast plots include:
@@ -224,7 +224,7 @@ Forecast plots include:
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 
 * Prophet is effective for **strategic and long-term sales forecasting**
 * Rolling validation provides a realistic measure of performance
